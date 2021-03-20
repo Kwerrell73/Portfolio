@@ -5,61 +5,73 @@
 }
 
 body {
-    background-color: #d9dcd6;
+    background-color: #9cb2c7;
 }
 
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: blueviolet;
-    color: #ffffff;
-}
+    background-image: url("../images/beach.jpg");
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    
+
+   }
 
 header h1 {
-    display: inline-block;
-    font-size: 48px;
+   font-size: 48px;
 }
 
-header h1 .seo {
-    color: #d9dcd6;
+header li {
+   text-align: right;
 }
 
-header div {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+nav ul {
+    display: flex;
+    flex-direction: row;
 }
 
-header div ul {
+nav ul li {
     list-style-type: none;
-}
+    text-decoration: solid underline;
 
-header div ul li {
-    display: inline-block;
-    margin-left: 25px;
 }
-
+header nav ul li a {
+    margin: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.05vw;
+}
 a {
-    color: #ffffff;
+    color: white;
     text-decoration: none;
 }
+
 
 p {
     font-size: 16px;
 }
 
 .float-left{
-    margin
+   
 }
 
 
 /* Resize images */
 img {
-width: 25%;
+width: 250px;
+height: auto;
 padding: 25px 15px 25px 15px;
  
+}
+
+.resume p {
+    color: blue;
+    text-decoration: underline;
 }
 
 footer {
@@ -71,4 +83,12 @@ footer {
 
 footer h2 {
     font-size: 12px;
+    text-align: right;
 }
+
+section {
+    padding: 0 60px;
+    
+  }
+  
+ 
