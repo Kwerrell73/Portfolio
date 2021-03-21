@@ -56,6 +56,10 @@ p {
     font-size: 16px;
 }
 
+.content h2 {
+    text-decoration: underline;
+}
+
 .float-left{
    
 }
@@ -68,6 +72,7 @@ height: auto;
 padding: 25px 15px 25px 15px;
  
 }
+
 
 .resume p {
     color: blue;
