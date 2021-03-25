@@ -1,14 +1,20 @@
+:root {
+    --darkblue:  darkblue;
+    --lightblue: #9cb2c7;
+}
+
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}
-
-body {
-    background-color: #9cb2c7;
-}
-
-header {
+  }
+  
+  body {
+    background-color: var(--lightblue)    ;
+  }
+  
+  header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-image: url("../images/beach.jpg");
@@ -16,89 +22,207 @@ header {
     background-position: 80%;
     background-attachment: fixed;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly ;
     flex-wrap: wrap;
+    position:-webkit-sticky;
+    position: sticky;
+    top: 0;
     align-items: flex-start;
-   
-
-   }
-
-header h1 {
-   font-size: 42px;
-
-}
-
-header h1:hover{
+    
+    
+  }
+  
+  header h1 {
+    font-size: 42px;
+    
+  }
+  
+  header h1:hover{
     text-shadow: #111111;
-}
-
-header li {
-   text-align: right;
-}
-
-nav ul {
+  }
+  
+  header li {
+    text-align: right;
+  }
+  
+  nav ul {
     display: flex;
     flex-direction: row;
-}
-
-nav ul li {
+  }
+  
+  nav ul li {
     list-style-type: none;
     text-decoration: solid underline;
-
-}
-header nav ul li a {
+    
+  }
+  header nav ul li a {
     margin: 10px 15px;
     font-weight: lighter;
     font-size: 1.05vw;
-}
-a {
+  }
+  a {
     color: white;
     text-decoration: none;
-}
-
-
-p {
-    font-size: 16px;
-}
-
-.content h2 {
-    text-decoration: underline;
-}
-
-.float-left{
-   
-}
-
-
-/* Resize images */
-img {
-width: 250px;
-height: auto;
-padding: 25px 15px 25px 15px;
  
-}
-
-
-.resume p {
-    color: blue;
+    
+  }
+  
+  
+  p {
+    font-size: 16px;
+  }
+  
+  .content h2 {
     text-decoration: underline;
-}
+    color: var(--darkblue);
+    text-align: left;
+  }
+  
+  
+  /*#work {
+    position: relative;
+    color: var(--darkblue);
+  }
+  /* Resize about me images */
+  #about-me img {
+  width: 250px;
+  height: auto;
+  padding: 25px 15px 25px 15px;
+  /* to blur image 
+  filter: blur(8px);
+    -webkit-filter: blur(8px); */
+   
+  }
 
-footer {
+.project {
+    width: 100%;
+    height: auto;
+    padding: 25px 15px 25px 15px;
+  }
+
+  .java{
+   width: 150;
+  height: 100;
+   filter: blur(5px);
+   -webkit-filter: blur(5px); 
+  }
+
+  
+
+  
+  /* Bottom left text */
+  /*.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  
+  
+  .float-left{
+    
+  }
+  
+  
+  
+  
+  .resume p {
+    color:var(--darkblue);
+    text-decoration: underline;
+  }
+  
+  footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   
-}
-
-footer h2 {
+    
+  }
+  
+  footer h2 {
     font-size: 12px;
     text-align: right;
-}
-
-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  section {
     padding: 0 60px;
     
   }
   
- 
+  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+  @media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+     
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+     
+    }
+  
+    footer h2 {
+      text-align: center;
+      width: 100%;
+    }
+    
+    
+  }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+    section {
+      padding: 30px 15px;
+    }
+      .container h2 {
+        flex: 1 100%;
+        text-align: center;
+      }
+    
+      .container p {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+      }
+    
+         
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+   
+    .section-title {
+      width: 95%;
+    }
+  
+    .container {
+      flex: 0 100%;
+    }
+  
+    .container h2 {
+      text-align: center;
+    }
+  
+    .container p {
+      flex: 0 100%;
+    }
+    
+    .work img {
+      text-align: center;
+    }
+  
+  }
