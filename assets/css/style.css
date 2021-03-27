@@ -7,7 +7,7 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    margin: 0;
+ 
   }
   
   body {
@@ -16,7 +16,7 @@
   }
   
   header {
-    padding: 20px;
+    padding: 0 20px 10px 35px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-image: url("../images/beach.jpg");
     background-size: cover;
@@ -38,8 +38,11 @@
     
   }
   
-  header h1:hover{
-    text-shadow: #111111;
+  header ul li:hover{
+    background: #808080;
+    color: white;
+    text-shadow: none;
+    border-radius: 15px;
   }
   
   header li {
@@ -61,11 +64,10 @@
     font-weight: lighter;
     font-size: 1.05vw;
   }
+
   a {
-    color: white;
-    text-decoration: none;
- 
-    
+    color:white;
+    text-decoration: solid;
   }
   
   
@@ -80,19 +82,12 @@
   }
   
   
-  /*#work {
-    position: relative;
-    color: var(--darkblue);
-  }
   /* Resize about me images */
   #about-me img {
   width: 250px;
   height: auto;
   padding: 25px 15px 25px 15px;
-  /* to blur image 
-  filter: blur(8px);
-    -webkit-filter: blur(8px); */
-   
+  
   }
 
 .project {
@@ -111,58 +106,47 @@
    border-style: solid;
    border-color:teal ;
    border-radius: 25px;   
-  }
-
-  .smallphotos{
-   width: 200px;
-   height: 200px;
-   background-position: center;
-   background: url("../images/javascript.png") ;
-   background-size: cover;
-   text-align: center;
-   border-style: solid;
-   border-color:teal ;
-   border-radius: 25px;   
-   float: left;
    display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-     }
-  
-     .smallphotos a{
-       color: violet;
-     }
+    }
 
-     .smallphotostwo{
-      width: 200px;
-      height: 200px;
-      background-position: center;
-      background: url("../images/beach.jpg") ;
-      background-size: cover;
-      text-align: center;
-      border-style: solid;
-      border-color:teal ;
-      border-radius: 25px;   
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-        }
-  
-  /* Bottom left text */
-  /*.bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-  }
-  
-  
-  .float-left{
     
-  } */
-  
-  
-  
-  
+  .smallphotostwo{
+    width: 200px;
+    height: 200px;
+    padding: 0 135px 0 135px;
+    background-position: center;
+    background: url("../images/laptop.jpeg") ;
+    background-size: cover;
+    text-align: center;
+    border-style: solid;
+    border-color:teal ;
+    border-radius: 25px;   
+    display: flex;
+    flex-direction: row;
+    filter: blur(1px);
+    -webkit-filter: blur(1px); 
+    float: left;
+         }
+ 
+  .smallphotosthree{
+    width: 200px;
+    height: 200px;
+    padding: 0 135px 0 135px;
+    background-position: center;
+    background: url("../images/sqltwo.jpg") ;
+    background-size: cover;
+    text-align: center;
+    border-style: solid;
+    border-color:teal ;
+    border-radius: 25px;   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;   
+ 
+        
+            }
+
+
   .resume p {
     color:var(--darkblue);
     text-decoration: underline;
@@ -172,7 +156,7 @@
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
+    text-align: center;
   }
   
   footer h2 {
