@@ -13,6 +13,7 @@
   body {
     background-color: var(--lightblue)    ;
     padding: 30px;
+   
   }
   
   header {
@@ -25,8 +26,7 @@
     display: flex;
     justify-content: space-evenly ;
     flex-wrap: wrap;
-    position:-webkit-sticky;
-    position: sticky;
+    
     top: 0;
     align-items: flex-start;
     
@@ -127,7 +127,7 @@
     border-radius: 25px;   
     display: flex;
     flex-direction: row;
-    filter: blur(1px);
+   
     -webkit-filter: blur(1px); 
     float: left;
     justify-content: space-between;
@@ -151,7 +151,60 @@
         
             }
 
+  .smallphotosfour{
+    width: 200px;
+    height: 200px;
+    padding: 0 135px 0 135px;
+    background-position: center;
+    background: url("../images/weather.png") ;
+    background-size: cover;
+    text-align: center;
+    border-style: solid;
+    border-color:teal ;
+    border-radius: 25px;   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+           
+                  
+ }
 
+ .smallphotosfive{
+  width: 200px;
+  height: 200px;
+  padding: 0 135px 0 135px;
+  background-position: center;
+  background: url("../images/untitled.png") ;
+  background-size: cover;
+
+  border-style: solid;
+  border-color:teal ;
+  border-radius: 25px;   
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;   
+         
+ }
+
+ .smallphotossix{
+  width: 200px;
+  height: 200px;
+  padding: 0 135px 0 135px;
+  background-position: center;
+  background: url("../images/workday.png") ;
+  background-size: cover;
+  text-align: center;
+  border-style: solid;
+  border-color:teal ;
+  border-radius: 25px;   
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;   
+         
+ }
+
+                      
+          
   .resume p {
     color:var(--darkblue);
     text-decoration: underline;

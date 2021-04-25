@@ -7,13 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Portfolio</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
 </head>
 
-<body>
+<body class="bg-info">
   <!-- navigation -->
   <header>
     <h1>
-      <a href="/">Werrell</a>
+      <a class="text-white" href="/">Werrell</a>
     </h1>
     <nav>
       <!-- Unordered list element -->
@@ -21,16 +22,16 @@
         <!-- List item element-->
         <li>
           <!-- Anchor element -->
-          <a href="#about-me">About Me</a>
+          <a class="text-white" href="#about-me">About Me</a>
         </li>
         <li>
-          <a href="#work">Work</a>
+          <a class="text-white" href="#work">Work</a>
         </li>
         <li>
-          <a href="#contact-me">Contact Me</a>
+          <a class="text-white" href="#contact-me">Contact Me</a>
         </li>
         <li>
-          <a href="#resume">Resume</a>
+          <a class="text-white" href="#resume">Resume</a>
         </li>
       </ul>
     </nav>
@@ -39,76 +40,132 @@
   <section class="hero"></section>
   <section class="content">
     <div id="about-me" class="container">
+      <div class="row">
+        <div class="col-sm">
+          <!-- insert this img element -->
+          <img src="./assets/images/KelW3.jpg" class="float-left" alt="headshot of developer" />
+        </div>
 
-      <!-- insert this img element -->
-      <img src="./assets/images/KelW3.jpg" class="float-left" alt="headshot of developer" />
-      <h2>About Me</h2>
-      <p>
-        <strong>Name: </strong> Kellie Werrell
+        <div class="col-sm">
+          <h2>About Me</h2>
+          <p>
+            <strong>Name: </strong> Kellie Werrell
+            </br>
+            </br>
+            <strong>Bio: </strong>
+            </br>
+            For the past 28 years, I've worked as both an account and project manager in the travel industry. Due to the
+            worldwide pandemic in 2020, I was placed on furlough. Over the past year, I've worked diligently to build my
+            technical
+            skillset. I'm currently studying Full Stack Development, with focus on HTML, CSS, JavaScript, Kubernetes and
+            Docker. It's my dream to rebuild my career as a successful
+            developer.
+          </p>
+        </div>
+      </div>
+      </br>
+      </br>
+      <section id="work" class="container">
+        <div class="row">
+          <div class="col">
+            <h2>Work</h2>
+            <h3 class="projectlabelone">Run Buddy Project:</h3>
+            <div class="projectcontainer">
+              <p>
+                <a class="text-white" href="https://kwerrell73.github.io/run-buddy/">Run Buddy</a>
+              </p>
+            </div>
+          </div>
+        </div>
         </br>
         </br>
-        <strong>Bio: </strong>
         </br>
-        For the past 28 years, I've worked as both an account and project manager in the travel industry. Due to the
-        worldwide pandemic in 2020, I was placed on furlough. Over the past year, I've worked diligently to build my
-        technical
-        skillset. I'm currently studying Full Stack Development, with focus on HTML, CSS, JavaScript, Kubernetes and
-        Docker. It's my dream to rebuild my career as a successful
-        developer.
-      </p>
-    </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <h3 class="projectlabelthree">Mood Boost:</h3>
+              <div class="smallphotosthree">
+                <p>
+                  <a class="text-white" href="https://kwerrell73.github.io/mood-boost/">Mood Boost</a>
+              </div>
+              </p>
+            </div>
+            
+            <div class="col-sm">
+              <H3 class="projectlabeltwo">Password Generator:</H3>
+              <div class="smallphotostwo">
+                <p>
+                  <a class="text-white" href="https://kwerrell73.github.io/password-generator/">Password Generator</a>
+                </p>
+              </div>
+            </div>
+           
 
-    </br>
-    </br>
-    <section id="work" class="container">
-      <h2>Work</h2>
-      <h3 class="projectlabelone">Run Buddy Project:</h3>
-      <div class="projectcontainer">
+            <div class="col-sm">
+              <h3 class="projectlabelthree">Weather Dashboard:</h3>
+              <div class="smallphotosfour">
+                <p>
+                  <a class="text-white" href="https://kwerrell73.github.io/weather-dashboard/">Weather Dashboard</a>
+              </div>
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            
+            <div class="col-sm">
+              <h3 class="projectlabelthree">Memory Game:</h3>
+              <div class="smallphotosfive">
+                <p>
+                  <a class="text-white" href=" https://kwerrell73.github.io/memory-game/">Memory Game</a>
+              </div>
+              </p>
+            </div>
+
+            <div class="col-sm">
+              <H5 class="projectlabeltwo">Work Day Scheduler:</H3>
+              <div class="smallphotossix">
+                <p>
+                  <a class="text-white" id="workday" href="https://kwerrell73.github.io/work-day-scheduler/">Work Day</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="col-sm">
+              <h3 class="projectlabelthree">Mood Boost:</h3>
+              <div class="smallphotosthree">
+                <p>
+                  <a class="text-white" href="https://kwerrell73.github.io/mood-boost/">Mood Boost</a>
+              </div>
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      </br>
+      </br>
+      <div id="contact-me" class="container">
+        <h2>Contact Me</h2>
         <p>
-          <a href="https://kwerrell73.github.io/run-buddy/">Run Buddy</a>
+          Phone: 602.577.0789
+          </br>
+          Email: kelliewerrell@gmail.com
+          </br>
+          <a class="text-white" href="https://www.linkedin.com/in/kellie-werrell-a770b3b5">Linkedin Profie</a>
         </p>
       </div>
       </br>
       </br>
-      </br>
-    
-        <H3 class="projectlabeltwo">Password Generator:</H3>
-        <div class="smallphotostwo">
-          <p>
-            <a href="https://kwerrell73.github.io/password-generator/">Password Generator</a>
-          </p>
-        </div>
-
-        <h3 class="projectlabelthree">Mood Boost:</h3>
-        <div class="smallphotosthree">
-          <p>
-            <a href="https://kwerrell73.github.io/mood-boost/">Mood Boost</a>
-          </p>
-        </div>
-    
-     
-
-    </section>
-    </br>
-    </br>
-    <div id="contact-me" class="container">
-      <h2>Contact Me</h2>
-      <p>
-        Phone: 602.577.0789
-        </br>
-        Email: kelliewerrell@gmail.com
-        </br>
-        <a href="https://www.linkedin.com/in/kellie-werrell-a770b3b5">Linkedin Profie</a>
-      </p>
-    </div>
-    </br>
-    </br>
-    <div id="resume" class="container">
-      <h2>Resume</h2>
-      <p>
-        <a href="assets/docs/Kellie Werrell -  2020 Resume.docx">My Resume</a>
-      </p>
-    </div>
+      <div id="resume" class="container">
+        <h2>Resume</h2>
+        <p>
+          <a href="assets/docs/Kellie Werrell -  2020 Resume.docx">My Resume</a>
+        </p>
+      </div>
   </section>
   </br>
   </br>
