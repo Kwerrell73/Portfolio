@@ -17,9 +17,9 @@
   }
   
   header {
-    padding: 0 20px 10px 35px;
+    padding: 5px 20px 10px 35px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-image: url("../images/beach.jpg");
+    background-image: url("../images/headerone.jpg");
     background-size: cover;
     background-position: 80%;
     background-attachment: fixed;
@@ -27,14 +27,18 @@
     justify-content: space-evenly ;
     flex-wrap: wrap;
     
-    top: 0;
+    
     align-items: flex-start;
+ 
     
     
   }
   
   header h1 {
     font-size: 42px;
+    color: white;
+    text-shadow: 2px 2px 0px rgb(224, 35, 199), 4px 4px 0px #707070;
+
     
   }
   
@@ -52,11 +56,15 @@
   nav ul {
     display: flex;
     flex-direction: row;
+    padding-top: 20px;
+    font-weight: bold;
+  
   }
   
   nav ul li {
     list-style-type: none;
     text-decoration: solid underline;
+    text-align: right;
     
   }
   header nav ul li a {
@@ -82,16 +90,27 @@
     text-align: left;
   }
   
-  #about-me p{
-    color: white;
+  .about-me-text{
+    color: rgb(252, 247, 247);
     font-size: 20px;
   }
+
   /* Resize about me images */
   #about-me img {
   width: 250px;
   height: auto;
   padding: 25px 15px 25px 15px;
   
+  }
+  #about-me h2{
+    padding-top: 25px;
+  }
+
+  .hero{
+    border-width:3px;  
+    border-bottom-style:groove;
+    margin-left: 35px;
+    margin-right: 25px;
   }
 
 .project {
@@ -111,6 +130,13 @@
    border-color:teal ;
    border-radius: 25px;   
   
+    }
+
+    #work{
+      border-width:3px;  
+      border-bottom-style:groove;
+      margin-left: 35px;
+      margin-right: 25px;
     }
 
     
@@ -203,11 +229,17 @@
          
  }
 
-                      
+.contact-me-text{
+  color: teal;
+}                  
           
   .resume p {
     color:var(--darkblue);
     text-decoration: underline;
+  }
+
+  .card{
+    border-width: 10px;
   }
   
   footer {
