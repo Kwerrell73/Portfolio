@@ -11,28 +11,32 @@
   }
   
   body {
-    background-color: var(--lightblue)    ;
+   
     padding: 30px;
+    background: linear-gradient(100DEG, rgba(61, 211, 148, 0.4), rgba(73, 88, 175, 0.4));
+    overflow-y: scroll;
    
   }
   
   header {
     padding: 5px 20px 10px 35px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-image: url("../images/headerone.jpg");
+    background-image: url("../images/muir-woods.jpg");
     background-size: cover;
     background-position: 80%;
     background-attachment: fixed;
     display: flex;
     justify-content: space-evenly ;
     flex-wrap: wrap;
-    
-    
+    border-style: ridge;
+    border-width: 3px;
+    border-radius: 6px;    
     align-items: flex-start;
- 
     
     
   }
+
+
   
   header h1 {
     font-size: 42px;
