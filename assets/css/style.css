@@ -13,7 +13,7 @@
   body {
    
     padding: 30px;
-    background: linear-gradient(100DEG, rgba(61, 211, 148, 0.4), rgba(73, 88, 175, 0.4));
+    background: linear-gradient(100DEG, teal, rgb(223, 236, 148), teal, teal, teal);
     overflow-y: scroll;
       
   }
