@@ -180,6 +180,24 @@
  
         
             }
+ 
+  .smallphotosMovie{
+    width: 200px;
+    height: 200px;
+    padding: 0 135px 0 135px;
+    background-position: center;
+    background: url("../images/myMovieList.png") ;
+    background-size: cover;
+    text-align: center;
+    border-style: solid;
+    border-color:teal ;
+    border-radius: 25px;   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+ 
+        
+            }            
 
   .smallphotosfour{
     width: 200px;
